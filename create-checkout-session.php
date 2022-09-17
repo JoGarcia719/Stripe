@@ -6,7 +6,7 @@ require 'vendor/autoload.php';
 
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://localhost/stripe-integration';
+$YOUR_DOMAIN = 'http://localhost';
 
 $checkout_session = \Stripe\Checkout\Session::create([
   'line_items' => [[
