@@ -3,17 +3,17 @@
 require "vendor/autoload.php";
 
 $stripe = new \Stripe\StripeClient(
-  'sk_test_51LgBjGKQOWb7wjoC2tRF7loqg5zhHTLQBbLv3on5tgbhidixA5F2F0TedRdWCJknXbApTQrMDxY9QkjdaW24UD0k00cjBmooL5'
+  'sk_test_51LgIKCKp2nU3RioBmyj1E19P5jkRVO9kAMmITT1u9JFw33z1eEu3E7V87Otj6qLCeLTkZbs36Q55iznaFrjhZeIF00jEaHr8W7'
 );
 $product = $stripe->products->retrieve(
-	'prod_MP0OLZSjiy1gJ4',
+	'prod_MP8PbXbSKcogOV',
 	[]
 );
-$price = $stripe->prices->retrieve('price_1LgDb8KQOWb7wjoCsa5fEEtk',[]);
-echo '<pre>';
-var_dump($product);
-var_dump($price);
-echo '</pre>';
+$price = $stripe->prices->retrieve('price_1LgK8NKp2nU3RioBrYf5Wh3v',[]);
+//echo '<pre>';
+//var_dump($product);
+//var_dump($price);
+//echo '</pre>';
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -38,3 +38,4 @@ echo '</pre>';
     </section>
   </body>
 </html>
+
